@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>FredTv - 150 chaînes TV en direct</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://unpkg.com/video.js@7.10.2/dist/video-js.css" rel="stylesheet">
+</head>
+<body>
+  <h1>📺 FredTv - 150 chaînes TV en direct</h1>
+  <input type="text" id="search" placeholder="🔍 Rechercher une chaîne...">
+  <div id="filter-container">
+    <select id="continent-filter">
+      <option value="">Tous les continents</option>
+      <option value="Europe">Europe</option>
+      <option value="Afrique">Afrique</option>
+      <option value="Amérique">Amérique</option>
+      <option value="Asie">Asie</option>
+      <option value="Moyen-Orient">Moyen-Orient</option>
+    </select>
+    <select id="country-filter">
+      <option value="">Tous les pays</option>
+    </select>
+    <select id="lang-filter">
+      <option value="">Toutes les langues</option>
+      <option value="fr">Français</option>
+      <option value="en">Anglais</option>
+      <option value="ar">Arabe</option>
+      <option value="pt">Portugais</option>
+    </select>
+  </div>
+  <div id="channel-list"></div>
+
+  <div id="player-container">
+    <video id="channel-player" class="video-js vjs-default-skin" controls>
+      <source id="video-source" type="application/x-mpegURL">
+    </video>
+  </div>
+
+  <script src="https://unpkg.com/video.js@7.10.2/dist/video.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

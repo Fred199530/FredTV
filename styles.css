@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f3f3f3;
+}
+#channel-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.channel {
+  width: 150px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+.channel img {
+  width: 100px;
+  height: auto;
+}
+#player-container {
+  margin-top: 20px;
+}
